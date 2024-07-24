@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSAL GLOBAL BUSINESS SOLUTION</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+    <script src="https://kit.fontawesome.com/9b60be4f95.js"></script>
+</head>
+<body>
+    <div class="menu_wrapper">
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> <span>About Us</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> <span>Contact Us</span></a></li>
+                <li><a href="update.html"><i class="fas fa-bell"></i> <span>Updates</span></a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="banner-container">
+        <img src="C:\Users\annan\OneDrive\Desktop\TECH TITANS\Assets\banner.jpg" alt="Banner Image" class="banner-image">
+        <!-- Button container -->
+        <div class="button-container">
+            <a href="contact.html" class="schedule-button">Schedule today</a>
+        </div>
+    </div>
+
+    <!-- Centered image container -->
+    <div class="centered-image">
+        <img src="C:\Users\annan\OneDrive\Desktop\TECH TITANS\Assets\2nd background.jpg" alt="Centered Image">
+    </div>
+
+    <div class="text-1">
+        <p>We understand how valuable your time is. Let us handle the administrative tasks so you can focus on what 
+        matters most—growing your business. With our wealth of experience and comprehensive service offerings,
+        we're here to support you and lighten your workload. Let us take care of the details while you drive your
+        business forward.</p>
+    </div>
+
+    <div class="text-2">
+        <p>Welcome to United Global Business Solution</p>
+    </div>
+
+    <div class="button">
+        <button class="red-button-2">Read more</button>
+    </div>
+
+    <!-- Slideshow container -->
+    <!-- Slideshow container -->
+    
+<div class="slideshow-container">
+        <div class="services-header">
+            <h3 class="services-title">Services Offered</h3>
+            <h3 class="see-text"><a href="services.html">See All</a></h3>
+        </div>
+        
+    <div class="slide-pair">
+        <div class="mySlides fade">
+            <div class="slide-card">
+                <img src="Assets/2nd background.jpg" alt="Slide 1" class="slide-image">
+                <div class="slide-text">
+                    <h2>Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing autem quo culpa eius amet ducimus, corporis molestiae.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="slide-card">
+                <img src="Assets/banner.jpg" alt="Slide 2" class="slide-image">
+                <div class="slide-text">
+                    <h2>Virtual Business Support</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing autem quo culpa eius amet ducimus, corporis molestiae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide-pair">
+        <div class="mySlides fade">
+            <div class="slide-card">
+                <img src="Assets/2nd background.jpg" alt="Slide 3" class="slide-image">
+                <div class="slide-text">
+                    <h2>Research and Marketing Analysis</h2>
+                    <p>Rem ipsum dolor sit amet consectetur adipisicing autem quo culpa eius amet ducimus, corporis molestiae.</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+   
+    
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(2)">&#10095;</a>
+</div>
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie sem at purus ullamcorper, ac lacinia odio blandit. Nam vulputate tempus rhoncus. Ut gravida dapibus dui, ac rhoncus ipsum pretium vestibulum. Donec ut lectus orci.</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>123 Street Name</p>
+                <p>City, Country</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p class="email-id">Email: info@example.com</p>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Updates</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            Tech Titans &copy; 2024 - All Rights Reserved
+        </p>
+    </footer>
+
+    <!-- JavaScript for slideshow functionality -->
+    <script>
+       var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+
+    </script>
+
+</body>
+</html>

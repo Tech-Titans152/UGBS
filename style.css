@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #eef8ff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.menu_wrapper {
+    background-color: #fff; /* White background color for the navbar */
+    color: #333; /* Text color */
+    padding: 30px 50px;
+    border-bottom: 1px solid #ccc; /* Example border for separation */
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Push items to the right */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left:50px; /* Adjust spacing between items */
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: column; /* Arrange icon and text vertically */
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px; /* Adjust text size */
+}
+
+.navbar a i {
+    margin-bottom: 5px; /* Space between icon and text */
+    font-size: 18px; /* Increase icon size */
+}
+
+.card {
+    max-width: 800px; /* Increase max-width for larger cards */
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 10px;
+}
+
+.card-content {
+    flex: 1;
+    padding: 50px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    color: #002D62;
+}
+
+.card-content p {
+    color: #333;
+}
+
+.card-image {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.card-image img {
+    width: 120%; /* Make the image 20% larger */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    position: absolute;
+    top: 50%; /* Adjust positioning */
+    left: 50%; /* Adjust positioning */
+    transform: translate(-50%, -50%); /* Center the image */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+
+    .card-content, .card-image {
+        flex: 1 1 auto; /* Reset flex properties */
+        width: 100%; /* Ensure full width */
+        padding: 20px; /* Adjust padding */
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .card-image img {
+        width: 100%; /* Full width for images on smaller screens */
+        max-width: none; /* Remove max-width */
+    }
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5opx;
+}
+
+form .fa-solid {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-solid {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.header-2 {
+    text-align: center; /* Center align text content */
+    padding: 40px 0; /* Adjust vertical spacing */
+}
+
+.header-2 p {
+    max-width: 800px; /* Limit width to maintain readability */
+    margin: 0 auto; /* Center align within max-width */
+    padding: 0 20px; /* Add padding for better readability */
+    color: #002D62;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px; /* Increase font size */
+    font-weight: bold;
+}
+.text-1 {
+    text-align: center;
+  
+}
+.text-1 p{
+    max-width: 800px; /* Limit width to maintain readability */
+    margin: 0 auto; /* Center align within max-width */
+    padding: 0 20px; /* Add padding for better readability */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px; /* Increase font size */
+    font-weight: bold;
+}
+.button {
+    margin-top: 15px; /* Adjust this value to move the button down */
+    
+}
+.red-button {
+    background-color: red;
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.red-button:hover {
+    background-color: darkred; /* Darker shade when hovered */
+}
+.banner-container {
+    position: relative; /* Ensures the container acts as a positioning context */
+    width: 100%;
+    max-height: 600px; /* Adjust this value to limit the height of the banner */
+    overflow: hidden; /* Ensures the banner image doesn't overflow its container */
+}
+
+.banner-image {
+    width: 100%;
+    height: 600px; /* Ensures the image maintains its aspect ratio */
+    display: block; /* Ensures the image behaves correctly */
+    object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+}
+
+.button-container {
+    position: absolute;
+    bottom: 50px; /* Adjust the distance from the bottom as needed */
+    right: 80px; /* Adjust the distance from the right as needed */
+}
+
+.schedule-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #333; /* Button background color */
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.schedule-button:hover {
+    background-color: darkred; /* Darker color on hover */
+    opacity: 1; 
+}
+.centered-image {
+    text-align: center;
+    padding: 70px 0; /* Adjust padding as needed */
+}
+.centered-image img {
+    width: 80%;
+    height: 400px; 
+    display: block; /* Ensures the image behaves correctly */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.text-2 {
+    text-align: left;
+    padding: 20px 0; /* Adjust padding as needed */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.text-2 p {
+    
+    margin-left: 160px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px; /* Ensure font size matches parent */
+    font-weight: bold; /* Ensure font weight matches parent */
+}
+.red-button-2{
+    margin-left: 160px;
+    background-color: red;
+    color: white; /* Text color */
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+.red-button-2:hover {
+    background-color: darkred; /* Darker shade when hovered */
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 80%; /* Reduce the maximum width to make the slideshow smaller */
+    position: relative;
+    margin: 20px auto; /* Center the slideshow horizontally and adjust top margin */
+}
+
+/* Hide all slides by default */
+.slideshow-container {
+    position: relative;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; /* Adjust spacing between pairs */
+}
+
+.mySlides {
+    flex: 0 0 45%; /* Adjust width of each slide within the pair */
+    margin: 0 10px; /* Adjust margin between slides */
+}
+
+.slide-card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex; /* Ensure flexbox layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 10px;
+}
+
+
+.slide-image {
+    width: 100%; /* Ensure image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.slide-text {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Position the next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a darker background color */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Adjust size of images inside slides */
+.mySlides img {
+    width: 50%; /* Ensure image fills the slide container horizontally */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit the maximum height of the images */
+}
+.services-title {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333;
+    
+    padding: 10px;
+}
+.see-text {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 24px;
+    color: blue;
+    margin-left: 130px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+
